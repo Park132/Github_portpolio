@@ -5,6 +5,7 @@
 - Name : Park Sanghyeon (박상현)
 - Age : 25
 - Email : aice7@naver.com
+
 - Major : 빅데이터전공
   - 학과 소개
     ```
@@ -20,6 +21,7 @@
     학업을 체계적으로 이수할 수 있도록 도움을 주는 학과
     ```
     🎮<u>[more](https://www.hallym.ac.kr/hallym_univ/sub01/cP14/sCP12.html)</u> 
+
 - Languages I studied
   - JAVA
   - C
@@ -28,6 +30,13 @@
 - What I want to Learn is..
   - `Linux`[^1], `Unreal Engine`[^2], `Unity .. more deeply`[^3], `Managing Server of Minecraft`[^4]
 
+
+
+
+
+---
+
+## 2. Projects
 
 
 
