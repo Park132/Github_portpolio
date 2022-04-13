@@ -57,11 +57,19 @@
   | E | 총 들기 / 집어넣기 |
   | F | 칼 공격1 |
   | Q | 칼 공격2 |
+  
+- 개인적으로 담당한 부분
+  - 근접공격 구현
+  - 좀비(적) 모델링을 제외한 것들을 구현
+  - 게임 오버 화면 구현
+  ![상세정보](2_1SZ/Surviving from Zombies 개인 기능 구현 정리.docx)
+  
 
 - 프로젝트 결과
 
-  <img src="/2_1SZ/frontpic.png" width="700" height="370">
+  <img src="/2_1SZ/frontpic.png" width="800" height="400">
   
+- 
 
 
 
