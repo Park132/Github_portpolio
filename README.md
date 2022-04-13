@@ -60,7 +60,8 @@
 
 - 프로젝트 결과
 
-  ![](2_1 SZ/frontpic.jpg)
+  <img src="/2_1SZ/frontpic.png" width="700" height="370">
+  
 
 
 
