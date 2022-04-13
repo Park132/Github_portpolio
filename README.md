@@ -61,7 +61,7 @@
 - 프로젝트 결과
 
 ![frontpic](2_1 SZ/frontpic.jpg)
-
+2_1 SZ
 
 
 
