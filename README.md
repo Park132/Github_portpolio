@@ -58,6 +58,9 @@
   | F | 칼 공격1 |
   | Q | 칼 공격2 |
 
+- 프로젝트 결과
+
+![frontpic](2_1 SZ/frontpic.jpg)
 
 
 
