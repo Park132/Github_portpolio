@@ -62,11 +62,9 @@
   - 근접공격 구현
   - 좀비(적) 모델링을 제외한 것들을 구현
   - 게임 오버 화면 구현
-    ![__상세정보__](2_1SZ/Surviving from Zombies 개인 기능 구현 정리.docx)
+  - <u>[__상세정보__](https://github.com/Park132/Github_portpolio/blob/407a85e219a71fdf07bfd6cecc65125f1904de58/2_1SZ/Surviving%20from%20Zombies%20%EA%B0%9C%EC%9D%B8%20%EA%B8%B0%EB%8A%A5%20%EA%B5%AC%ED%98%84%20%EC%A0%95%EB%A6%AC.docx)</u> 
   
-
 - 프로젝트 결과
-
   <img src="/2_1SZ/frontpic.png" width="800" height="400">
   
 - 
