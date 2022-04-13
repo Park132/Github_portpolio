@@ -62,7 +62,7 @@
   - 근접공격 구현
   - 좀비(적) 모델링을 제외한 것들을 구현
   - 게임 오버 화면 구현
-  ![상세정보](2_1SZ/Surviving from Zombies 개인 기능 구현 정리.docx)
+    ![__상세정보__](2_1SZ/Surviving from Zombies 개인 기능 구현 정리.docx)
   
 
 - 프로젝트 결과
