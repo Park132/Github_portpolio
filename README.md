@@ -105,7 +105,10 @@
   - 모델링 사운드를 제외한 것들을 담당함
   
 - 프로젝트 결과
+
+  <img src="/3_1BB/pic1.png" width="800" height="400">
   
+  <img src="/3_1BB/pic2.png" width="800" height="400">
 
   
 
