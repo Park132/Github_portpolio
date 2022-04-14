@@ -105,7 +105,7 @@
   
 - 담당한 부분
   - 모델링 사운드를 제외한 모든 것들을 담당함
-  
+  - <u>[__상세정보__](https://github.com/Park132/Github_portpolio/blob/main/3_1BB/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%203%ED%95%99%EB%85%84%20BB.docx)</u>
 - 프로젝트 결과
 
   <img src="/3_1BB/pic1.PNG" width="800" height="400">
