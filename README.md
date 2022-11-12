@@ -27,6 +27,7 @@
   - C
   - C++
   - Python
+  - C#(Unity)
 - What I want to learn now is..
   - `Linux`[^1], `Unreal Engine`[^2], `Unity .. more deeply`[^3], `Managing Server of Minecraft`[^4]
 
