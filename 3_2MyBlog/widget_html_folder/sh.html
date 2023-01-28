@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    <title>iframe-SH</title>
+    <script>
+        function init() { // 배경색과 글자색 초기화
+            var obj = document.getElementById('body');
+            obj.style.background = 'black';
+            obj.style.color = 'greenyellow';
+            obj.style.border = 'thin solid greenyellow';
+        }
+    </script>
+    <style>
+        #body{
+            -ms-overflow-style: none;
+        }
+ 
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        hr{
+            border: 2px solid greenyellow;
+            background-color: greenyellow;
+        }
+        .description {
+            background-color: rgb(38, 38, 38);
+            padding: 10px;
+            margin: 20px;
+        }
+        .description-box {
+            background-color: rgb(38, 38, 38);
+            color: rgb(184, 246, 90);
+            padding: 10px;
+            margin-right: 90px;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            margin: 10px;
+        }
+        img {
+            margin-left: 20px;
+        }
+        span {
+            background-color: yellowgreen;
+            color: black;
+            line-height: 30px;
+        }
+        .realize-font{
+            font-size: 13px;
+            line-height: 2em;
+        }
+        code {
+            display: block;
+            background-color: rgb(38, 38, 38);
+            margin:10px;
+            margin-right:90px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        button {
+            border: 1px solid greenyellow;
+            background-color: black;
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body id="body" onload="init()">    
+    <hr>
+    <h3>Stone Henge</h3>
+    <hr style="border: 1px solid greenyellow">
+    <div class="description">
+        개인으로 진행한 텀프로젝트 <br>
+        WebGL을 사용하여 개발함
+        추가 정보 파일 다운로드 : <a href="/portfolio/ST-ppt.pptx" download><button type="button">Download</button></a>
+    </div>
+    <div>
+        <ul>
+            <li>프로젝트 설명
+                <ul>
+                    <div class="description-box">
+                        플레이어가 고민 중일 때 이 게임을 켜서 제단과 상호작용을하면
+신성한 게임이펙트 효과와 텍스트로 랜덤한 대답이 나오는 미니 게임
+스톤헨지를 만드는 것에 시간이 너무 소비되어 후자의 기능들은 구현하지 못함
+                    </div>
+                </ul>
+            </li>
+            <li>조작키 및 구현내용 설명
+                <table bordercolor="greenyellow" border="3">
+                    <th>조작키</th><th>구현내용</th>
+                    <tr>
+                        <td>화살표(마우스로 클릭)</td><td>카메라 이동</td>
+                    </tr>
+                    <tr>
+                        <td>화면을 마우스로 드래그</td><td>시점 변경</td>
+                    </tr>
+                </table>
+            </li>
+            <li>담당한 부분
+                <ul>
+                    <li>WebGL을 통하여 스톤헨지를 구현</li>
+                </ul>
+            </li>
+            <li>프로젝트 결과
+                <dl>
+                    <img src="img_html_folder/st1.jpg" alt="." width="500" height="400">
+                </dl>
+                <dl>
+                    <img src="img_html_folder/st2.jpg" alt="." width="500" height="400">
+                </dl>
+            </li>
+            <li>프로젝트를 진행하면서 느낀 점
+                <ul>
+                    <li>어려웠던 점
+                        <ol>
+                            <li><span><b>어렴풋이 생각만 했던 개발 방식</b></span> ← 스톤헨지에서 거대한 돌 하나를 만드는 것 조차, 3차원의 벡터를 설정하면서 위치를 지정했는데, 이 과정들이 너무 생소해서 적응하는데 시간이 많이 걸림</li>
+                            <li><span><b>3차원 공간 계산</b></span> ← 유니티의 경우 게임 씬에 Cube를 놓고 드래그로 위치 조정을 했던 것들이, WebGL에서는 원하는 위치를 알맞게 계산해서 코드로 위치를 지정해야했음. 이 과정에 시간이 너무 소모되어 나머지 기능들을 구현할 시간이 너무 부족했음
+
+                            </li>
+                        </ol>
+                    </li>
+                    <li>깨달은 점
+                        <div class="description-box">
+                            <ol class="realize-font">
+                                <li> 간단히 사용만 하던 게임 개발 툴 뒤엔 어떻게 작동하는지에 대한 원리를 알음</li>
+                                <li>해당 강의를 수강하면서 "게임 클라이언트 엔진 개발자"라는 직군에 대해 알게됨</li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <hr>
+</body>

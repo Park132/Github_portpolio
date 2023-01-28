@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>html for iframe</title>
+    <script>
+        function init() { // 배경색과 글자색 초기화
+            var obj = document.getElementById('body');
+            obj.style.background = 'black';
+            obj.style.color = 'greenyellow';
+            obj.style.border = 'thin solid greenyellow';
+        }
+    </script>
+    <style>
+        #body{
+            -ms-overflow-style: none;
+        }
+ 
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        hr{
+            border: 2px solid greenyellow;
+            background-color: greenyellow;
+        }
+        ul > li {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body id="body" onload="init()">
+    <h1>SW 텀프로젝트 결과물 대회</h1>
+    <hr>
+    <ul>
+        <li>팀원 : 박상현, 김동현, 노규호</li>
+        <li>수상 : 동상</li>
+        <li>주최기관 : 한림SW중심대학사업단</li>
+        <li>날짜 : 2022.12.17</li>
+        <li>해당 프로젝트 : Escape from Zombies</li>
+    </ul>
+</body>

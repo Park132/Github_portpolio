@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+    <title>iframe--efz</title>
+    <script>
+        function init() { // 배경색과 글자색 초기화
+            var obj = document.getElementById('body');
+            obj.style.background = 'black';
+            obj.style.color = 'greenyellow';
+            obj.style.border = 'thin solid greenyellow';
+        }
+    </script>
+    <style>
+        #body{
+            -ms-overflow-style: none;
+        }
+ 
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        hr{
+            border: 2px solid greenyellow;
+            background-color: greenyellow;
+        }
+        .description {
+            background-color: rgb(38, 38, 38);
+            padding: 10px;
+            margin: 20px;
+        }
+        .description-box {
+            background-color: rgb(38, 38, 38);
+            color: rgb(184, 246, 90);
+            padding: 10px;
+            margin-right: 90px;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        table {
+            text-align: center;
+            border-collapse: collapse;
+            margin: 10px;
+        }
+        img {
+            margin-left: 20px;
+        }
+        span {
+            background-color: yellowgreen;
+            color: black;
+            line-height: 30px;
+        }
+        .realize-font{
+            font-size: 13px;
+            line-height: 2em;
+        }
+        button {
+            border: 1px solid greenyellow;
+            background-color: black;
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body id="body" onload="init()">    
+    <hr>
+    <h3>Surviving from Zombies</h3>
+    <hr style="border: 1px solid greenyellow">
+    <div class="description">
+        팀으로 진행한 텀프로젝트 <br>
+        3인으로 개발, 유니티 엔진을 사용<br>
+        추가 정보 파일 다운로드 : <a href="/portfolio/EFZ-summary.docx" download><button type="button">Download</button></a>
+    </div>
+    <div>
+        <ul>
+            <li>프로젝트 설명
+                <ul>
+                    <div class="description-box">
+                        바이러스에 감염된 좀비들이 넘치는 도시에서 백신을 모아 탈출하는 1인칭 슈팅게임
+                    </div>
+                </ul>
+            </li>
+            <li>조작키 및 구현내용 설명
+                <table bordercolor="greenyellow" border="3">
+                    <th>조작키</th><th>구현내용</th>
+                    <tr>
+                        <td>WASD</td><td>플레이어 움직임 컨트롤</td>
+                    </tr>
+                    <tr>
+                        <td>Left Shift</td><td>플레이어 달리기</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse Control</td><td>플레이어 시선 컨트롤</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse Left Click</td><td>총 발사</td>
+                    </tr>
+                    <tr>
+                        <td>Hold Mouse Right Click</td><td>조준 사격</td>
+                    </tr>
+                    <tr>
+                        <td>Space bar</td><td>플레이어 점프</td>
+                    </tr>
+                    <tr>
+                        <td>R</td><td>장전</td>
+                    </tr>
+                    <tr>
+                        <td>T</td><td>총 둘러보기</td>
+                    </tr>
+                    <tr>
+                        <td>E</td><td>총 들기/집어넣기</td>
+                    </tr>
+                    <tr>
+                        <td>F</td><td>칼 공격1</td>
+                    </tr>
+                    <tr>
+                        <td>Q</td><td>칼 공격2</td>
+                    </tr>
+                </table>
+            </li>
+            <li>개인적으로 담당한 부분
+                <ul>
+                    <li>근접공격 구현</li>
+                    <li>좀비(적) 모델링을 제외한 것들을 구현</li>
+                    <li>게임 오버 화면 구현(페이드 인, 페이드 아웃)</li>
+                </ul>
+            </li>
+            <li>프로젝트 결과
+                <dl>
+                    <img src="img_html_folder/efz1.jpg" alt="." width="500" height="400">
+                </dl>
+                <dl>
+                    <img src="img_html_folder/efz2.jpg" alt="." width="500" height="400">
+                </dl>
+            </li>
+            <li>프로젝트를 진행하면서 느낀 점
+                <ul>
+                    <li>어려웠던 점
+                        <ol>
+                            <li><span><b>팀원과의 소통 부족</b></span> ← 서로간의 소통이 부족하여 계획에 차질이 생김</li>
+                            <li><span><b>서로의 작업물 병합하기</b></span> ← 서로의 작업물을 이해하지 못해 합칠 때 어려움을 겪음</li>
+                            <li><span><b>구체적이지 않은 계획</b></span> ← 구체적이지 않아 프로젝트의 진행상황을 파악하지 못함</li>
+                        </ol>
+                    </li>
+                    <li>깨달은 점
+                        <div class="description-box">
+                            <ol class="realize-font">
+                                <li>팀원과 적극적인 소통을 하여, 진행하는 프로젝트를 이해해야함</li>
+                                <li>서로 코드를 주고받을 때, 주석을 통해 상대방이 이해하기 쉽게 해야함</li>
+                                <li>계획의 구체화(분석, 설계, 구현, 디버그)가 필요</li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <hr>
+</body>

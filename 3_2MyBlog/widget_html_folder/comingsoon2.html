@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+    <title>comingsoon_game_worm</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        function init() { // 배경색과 글자색 초기화
+            var obj = document.getElementById('body');
+            obj.style.background = 'black';
+            obj.style.color = 'greenyellow';
+            obj.style.border = 'thin solid greenyellow';
+        }
+
+        var w_length = 1;
+        var p_arr = [];
+
+        var x = 1;
+        var y = -20;
+        var dir_x = [1, 0, -1];
+        var dir_y = [1, 0, -1];
+        var x_arr_i = 0;
+        var y_arr_i = 1;
+
+        var prevkey;
+        var nextkey;
+        var currentkey = 210;
+        var checkkey;
+
+
+        $(document).ready(function() {
+
+            $('td').addClass(function(index) {
+                return 'pix'+index;
+            });
+
+            $('.gamestart').on("click", function() {
+                
+                setInterval(playerMove, 200);
+                
+                function playerMove() {
+                    nextkey = currentkey + x * dir_x[x_arr_i] + y * dir_y[y_arr_i];
+                    prevkey = currentkey;
+                    cuurrentkey = nextkey;
+
+                    $('.pix'+currentkey).addClass('on');
+                    $('.pix'+prevkey).removeClass('on');
+                };
+
+                function makeBall() {
+
+                };
+            });
+
+            $(document).keydown(function(e) {
+                if(e.keyCode == 37) { // 왼쪽
+                    x_arr_i = 2;
+                    y_arr_i = 1;
+                } else if(e.keyCode == 38) { // 위
+                    x_arr_i = 1;
+                    y_arr_i = 0;
+                } else if(e.keyCode == 39) { // 오른쪽
+                    x_arr_i = 0;
+                    y_arr_i = 1;
+                } else if(e.keyCode == 40) { // 아래
+                    x_arr_i = 0;
+                    y_arr_i = 2;
+                }
+            });
+
+        });
+    </script>
+    <style>
+        #body{
+            -ms-overflow-style: none;
+        }
+ 
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        hr{
+            border: 2px solid greenyellow;
+            background-color: greenyellow;
+        }
+        tr, td{
+            background-color: black;
+            color: black;
+        }
+        table {
+            text-align: center;
+            width: 400px;
+            height:400px;
+        }
+        .on {
+            background-color: greenyellow;
+        }
+        .off {
+            background-color: black;
+        }
+        .bar {
+            background-color: greenyellow;
+        }
+        .ball {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <body id="body" onload="init()">
+        <h1>Comming Soon</h1>
+        <hr>
+        <h3>Under Development</h3>
+        <hr>
+        <div class="monitor">
+            <table border="1"> 
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+            </table>
+            <span style="display: relative;">Use Arrow Key</span>    
+            <br>
+            <button class="gamestart" style="background-color:black; color:greenyellow; border: 1px solid greenyellow; margin:10px;">start the game</button>
+        </div>
+        
+    </body>
+</body>

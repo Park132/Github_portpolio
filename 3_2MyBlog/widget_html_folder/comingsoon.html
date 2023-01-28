@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<head>
+    <title>comingsoon_game_pingpong</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        function init() { // 배경색과 글자색 초기화
+            var obj = document.getElementById('body');
+            obj.style.background = 'black';
+            obj.style.color = 'greenyellow';
+            obj.style.border = 'thin solid greenyellow';
+        }
+
+        $(document).ready(function() {
+            // 픽셀에 클래스 부여
+            $('td').addClass(function(index) {
+                return 'pix'+index;
+            });
+            $('td').addClass('on');
+
+            // 변수들
+            var isPlay = false;
+            var isBorder = false;
+
+            var poskey = 382;
+
+            var x = 1;
+            var y = -20;
+            var dir_x = [0, 1, 0, -1];
+            var dir_y = [1, 0, -1, 0];
+            var x_arr_i = 1;
+            var y_arr_i = 0;
+
+            var prevkey;
+            var nextkey;
+            var currentkey = 360;
+            var checkkey;
+
+            $('.gamestart').on("click", function() {
+                for(var i = 200; i<=379; i++) {
+                    $('.pix'+i).removeClass('on');
+                    $('.pix'+i).addClass('off');
+                }
+                for(var i = 380; i<= 399; i++) {
+                    $('.pix'+i).removeClass('on');
+                    $('.pix'+i).addClass('off');
+                }
+                
+                function ballMove() {
+                    
+                    checkkey = currentkey + x * dir_x[x_arr_i] + y * dir_y[y_arr_i];
+                    for(var i = 0; i<4; i++) {
+                        for(var j = 0; j<4; j++) {
+                            var checkkey2 = currentkey + x * dir_x[i] + y * dir_y[j];
+
+                            if($('.pix'+checkkey2).attr('class') == 'pix'+checkkey2+' on'){
+                                $('.pix'+checkkey2).removeClass('on');
+                                $('.pix'+checkkey2).addClass('off');
+                                y_arr_i = 2;
+                            }
+
+                            if($('.pix'+checkkey2).attr('class') == 'pix'+checkkey2+' off bar') {
+                                y_arr_i = 0;
+                            }
+                        }
+                    }
+
+                    prevkey = currentkey;
+                    nextkey = currentkey + x * dir_x[x_arr_i] + y * dir_y[y_arr_i];
+                    currentkey = nextkey;
+
+                    if(currentkey%20 == 19 || currentkey%20 == 0) {
+                        x_arr_i = (x_arr_i + 2)%4;
+                    }
+                    if(currentkey >= 0 && currentkey <= 19) {
+                        y_arr_i = (y_arr_i + 2)%4;
+                    }
+                    
+                    $('.pix'+currentkey).addClass('ball');
+                    $('.pix'+prevkey).removeClass('ball');
+                }
+
+                // setInterval(ballMove, 500);
+                isPlay = true;
+                if(isPlay) {
+                    setInterval(ballMove, 200);
+                    isPlay = true;
+                } else {
+                    clearInterval(MysetInterval);
+                    isPlay = false;
+                }
+            });
+            
+
+            // 입력
+            $(document).keydown(function(e) {
+                if(poskey >= 382 && poskey <= 397) {
+                    for(var i = 380; i<= 399; i++) {
+                        $('.pix'+i).removeClass('bar');
+                    }
+                }
+                else {
+                    return null;
+                }
+
+                if(e.keyCode ==37) {
+                    if(poskey == 382){
+                        for(var i = poskey-2; i <=poskey+2; i++) {
+                            $('.pix'+i).addClass('bar');
+                        }
+                    } else {
+                        poskey--;
+                        for(var i = poskey-2; i <=poskey+2; i++) {
+                            $('.pix'+i).addClass('bar');
+                        }
+                    }
+                }
+                if(e.keyCode == 39) {
+                    if(poskey == 397){
+                        for(var i = poskey-2; i <=poskey+2; i++) {
+                            $('.pix'+i).addClass('bar');
+                        }
+                    } else {
+                        poskey++;
+                        for(var i = poskey-2; i <=poskey+2; i++) {
+                            $('.pix'+i).addClass('bar');
+                        }
+                    }
+                }
+            });
+            
+            
+        });
+        </script>
+    <style>
+        #body{
+            -ms-overflow-style: none;
+        }
+ 
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        hr{
+            border: 2px solid greenyellow;
+            background-color: greenyellow;
+        }
+        tr, td{
+            background-color: greenyellow;
+            color: black;
+        }
+        table {
+            text-align: center;
+            width: 400px;
+            height:400px;
+        }
+        .on {
+            background-color: greenyellow;
+        }
+        .off {
+            background-color: black;
+        }
+        .bar {
+            background-color: greenyellow;
+        }
+        .ball {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body id="body" onload="init()">
+    <h1>Comming Soon</h1>
+    <hr>
+    <h3>Under Development</h3>
+    <hr>
+    <div class="monitor">
+        <table border="1"> 
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+            </tr>
+        </table>
+        <span style="display: relative;">Use Arrow Key</span>    
+        <br>
+        <button class="gamestart" style="background-color:black; color:greenyellow; border: 1px solid greenyellow; margin:10px;">start the game</button>
+    </div>
+    
+</body>

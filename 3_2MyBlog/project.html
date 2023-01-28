@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+    <title>2022년 나의 블로그</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <style>
+        body{
+            border:3px solid greenyellow;
+            width:1500px;
+            height:750px;
+            
+        }
+        .header {
+            background-color: greenyellow;
+            width:100%;
+            height:40%;
+        }
+        .nav {
+            background-color: black;
+            color:greenyellow;
+            border-left: 2px solid greenyellow;
+            border-right: 3px solid greenyellow;
+            float:left;
+            width:23.8%;
+            height:75%;
+        }
+        .section {
+            background-color: greenyellow;
+            float: left;
+            width:1138px;
+            height:75%;
+        }
+        footer {
+            position: absolute;
+            transform: translate(32%, 1770%);
+            float: left;
+            width: 1138px;
+            height: 30px;
+            background-color: greenyellow;
+            color: black;
+        }
+
+        .header-div {
+            position:absolute;
+            width:360px;
+            height:40%;
+            text-align: center;
+            background-color: black;
+            color: greenyellow;
+            border: 3px solid greenyellow;
+        }
+        li {
+            float:left;
+            font-size: 30px;
+            line-height: 70px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .nav-parent {
+            display:block;
+            text-align: center;
+            width: 357px;
+            font-size: 38px;
+            background-color: black;
+            border-bottom: 5px solid greenyellow;
+            border-top:4px solid greenyellow;
+        }
+        nav > div > div {
+            text-align: left;
+            line-height: 20px;
+            font-size: 18px;
+            width: 357px;
+            height: 30px;
+            padding-top: 5px;
+            border-bottom: 2px solid greenyellow;
+        }
+    </style>
+
+    <script>
+        //jquery 들
+        $(document).ready(function() {
+            // 왼쪽 nav 위젯 슬라이드 적용
+            $('#p1').ready(function() {
+                $('#p1_c').hide();
+            });
+            $('#p1').on("click", function() {
+                $('#p1_c').slideToggle();
+            });
+            $('#p2').ready(function() {
+                $('#p2_c').hide();
+            });
+            $('#p2').on("click", function() {
+                $('#p2_c').slideToggle();
+            });
+            $('#p3').ready(function() {
+                $('#p3_c').hide();
+            });
+            $('#p3').on("click", function() {
+                $('#p3_c').slideToggle();
+            });
+
+            $('.w1').on("click", function() {
+                $('.section_win').attr('src', 'widget_html_folder/efz.html');
+            });
+            $('.w2').on("click", function() {
+                $('.section_win').attr('src', 'widget_html_folder/bb.html');
+            });
+            $('.w3').on("click", function() {
+                $('.section_win').attr('src', 'widget_html_folder/sh.html');
+            });
+            $('.cs').on("click", function() {
+                $('.section_win').attr('src', 'widget_html_folder/comingsoon.html');
+            })
+            $('.a1').on("click", function() {
+                $('.section_win').attr('src', 'widget_html_folder/award1.html');
+            });
+            $('.a2').on("click", function() {
+                $('.section_win').attr('src', 'widget_html_folder/award2.html');
+            });
+            $('.a3').on("click", function() {
+                $('.section_win').attr('src', 'widget_html_folder/award3.html');
+            });
+        });
+    </script>
+
+    <script>
+        // javascript
+        var span1 = document.getElementById("span");
+        var timerID = setInterval("doRotate()", 200);
+
+        function doRotate() {
+	        var str = span.innerHTML;
+	        var firstChar = str.substr(0, 1);
+	        var remains = str.substr(1, str.length-1);
+	        str = remains + firstChar;
+	        span.innerHTML = str; 
+        }
+
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-div" style="width:360px; left:10px; top:10px;">
+            <span style="font-size:60px; font-family:Georgia, 'Times New Roman', Times, serif; line-height: 2em;"">
+                Profile
+            </span>
+            <img src="img/profileimg.jpg" alt="." width="160" height="160" style="display: block; border-radius: 70px; transform: translate(63%, -13%);">
+        </div>
+        <div class="header-div" style="width:570px; left:370px; top:10px;">
+            <ul>
+                <li>Major : BigData, Contents</li>
+                <li>Completed Project : 3</li>
+                <li>Project on Progress : 4</li>
+            </ul>
+        </div>
+        <div class="header-div" style="width:570px; left:940px; top:10px;">
+            <ul>
+                <li>Programming : HTML, Jquery, C++</li>
+                <li>Count of Awards : 3 </li>
+                <li>Interested in : Game Development</li>
+            </ul>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="nav-parent" id="p1">
+            Completed Projects
+        </div>
+        <div class="nav-content1-child" id="p1_c">
+            <div class="w1"> ▶ Escaping from Zombies</div>
+            <div class="w2" > ▶ Boss Beat</div>
+            <div class="w3"> ▶ StoneHenge</div>
+        </div>
+        <div class="nav-parent" id="p2">
+            Projects on Progress
+        </div>
+        <div class="nav-content1-child" id="p2_c">
+            <div class="cs"> ▶ Coming Soon</div>
+            <div class="cs"> ▶ Coming Soon</div>
+            <div class="cs"> ▶ Coming Soon</div>
+            <div class="cs"> ▶ Coming Soon</div>
+        </div>
+        <div class="nav-parent" id="p3">
+            Awards
+        </div>
+        <div class="nav-content1-child" id="p3_c">
+            <div class="a1"> ▶ SW텀프로젝트 결과물대회</div>
+            <div class="a2"> ▶ 2022년 GitHub 이력서 해커톤</div>
+            <div class="a3"> ▶ 2022년 SW 창업 아이디어 경진대회</div>
+        </div>
+    </nav>
+    <section class="section">
+        <iframe class="section_win" src="project_dummy.html" width="1138px" height="525px"></iframe>
+    </section>
+    <footer>
+        <span id="span" style="padding : 4px;">Today's Weather : Unknown, Unknown °C / Today's News : Uknown_News1, Unknown_News2 / Playlist : Unknown / ← Under Development</span>
+    </footer>
+</body>

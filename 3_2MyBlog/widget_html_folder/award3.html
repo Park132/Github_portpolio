@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>html for iframe</title>
+    <script>
+        function init() { // 배경색과 글자색 초기화
+            var obj = document.getElementById('body');
+            obj.style.background = 'black';
+            obj.style.color = 'greenyellow';
+            obj.style.border = 'thin solid greenyellow';
+        }
+    </script>
+    <style>
+        #body{
+            -ms-overflow-style: none;
+        }
+ 
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        hr{
+            border: 2px solid greenyellow;
+            background-color: greenyellow;
+        }
+        ul > li {
+            margin: 10px;
+        }
+        a {
+            color: black;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body id="body" onload="init()">
+    <h1>2022년 SW 창업 아이디어 경진대회</h1>
+    <hr>
+    <ul>
+        <li>팀원 : 안세은, 홍신화, 박상현</li>
+        <li>수상 : 동상</li>
+        <li>주최기관 : 한림SW중심대학사업단</li>
+        <li>날짜 : 2022.11.02</li>
+        <li>해당 링크 : <a href="https://hlsw.hallym.ac.kr/index.php?mt=page&mp=5_2&mm=oxbbs&oxid=2&cpage=1&key=TITLE_CONTENT&val=MATE&CAT_ID=0&BID=1549&cmd=view">수상발표 사이트</a></li>
+    </ul>
+</body>
