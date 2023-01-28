@@ -362,7 +362,7 @@
   
 - 담당한 부분
   - 모델링, 사운드를 제외한 모든 것을 담당 (언리얼 엔진을 사용)
-  - 관련 ppt 자료 ▶ <u>[__상세정보__](https://docs.google.com/presentation/d/1vmLnfrdXXqQP3ll9tVHkDzeImHfmWwcg/edit?usp=sharing&ouid=107613512527669999751&rtpof=true&sd=true)
+  - 관련 ppt 자료 ▶ <u>[__상세정보__](https://docs.google.com/presentation/d/1lmo4ADlvTBv8ttFLliyMBjV6eHRBcoml/edit?usp=sharing&ouid=107613512527669999751&rtpof=true&sd=true)
 
 - 프로젝트 결과
   
