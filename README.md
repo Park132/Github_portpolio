@@ -31,7 +31,10 @@
 - What I want to learn now is..
   - `Linux`[^1], `Unreal Engine`[^2], `Unity .. more deeply`[^3], `Managing Server of Minecraft`[^4]
 
-
+<hr>
+- Project의 목차
+  - <u>[Project-SZ](#https://github.com/Park132/Github_portpolio/edit/main/README.md#2-1-surviving-from-zombies)</u>
+  - Project-BB
 
 
 
@@ -413,7 +416,7 @@
 - 프로젝트 결과
   
   <img src="3_2MyBlog/1.png" width="800" height="400">
-  
+  <hr>
   <img src="3_2MyBlog/2.png" width="800" height="400">
   
 - 프로젝트를 진행하면서 느낀 점
