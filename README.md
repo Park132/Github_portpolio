@@ -188,7 +188,7 @@
 보다 강해진 탱크로 적 탱크들을 모두 파괴하는 것이 게임의 목표
 ```
 - 해당 리포지토리 링크
-  :bomb:<u>[__Link__](https://github.com/Park132/git-3d.git)
+  - :bomb:<u>[__Link__](https://github.com/Park132/git-3d.git)
 - 조작키
   | **조작키** | **구현내용** |
   |------|---------------|
