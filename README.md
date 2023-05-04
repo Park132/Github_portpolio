@@ -3,7 +3,7 @@
 ## 1. Introdution
 ---
 - Name : Park Sanghyeon (박상현)
-- Age : 25
+- Age : 26
 - Email : aice7@naver.com
 
 - Major : 빅데이터전공
@@ -28,6 +28,7 @@
   - C++
   - Python
   - C#(Unity)
+  - HTML, CSS, Javascript, Jquery
 - What I want to learn now is..
   - `Linux`[^1], `Unreal Engine`[^2], `Unity .. more deeply`[^3], `Managing Server of Minecraft`[^4]
 
@@ -461,7 +462,7 @@
 ## 3. Plan
 1. __`정보처리기사 자격증`__ 취득!
 2. __`모바일 게임`__ 을 빌드하여 구글 플레이스토어에 업로드
-3. 복학 전까지 전공 공부 미리 해놓기
+3. ~~복학 전까지 전공 공부 미리 해놓기~~
 ---
   
 
