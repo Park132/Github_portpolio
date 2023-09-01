@@ -459,7 +459,7 @@
   </details>
 
 ---
-### 2-7 Descent
+### 2-8 Descent
 > 팀으로 진행한 텀 프로젝트 / Unity & Photon & Unity Machine Learning (3인 개발)
 - 프로젝트 설명
 ```
@@ -472,32 +472,44 @@
 최종적으로 상대팀의 베이스를 파괴하여 게임에서 승리합니다.
 ```
 - 해당 리포지토리 링크
-  - :skull:<u>[__Link__](https://github.com/Park132/git-ar.git)
+  - :skull:<u>[__Link__](https://github.com/Park132/git-ar.git) ◀ 멀티플레이만 구현되었으므로 혼자서 플레이 :x:
   
 - 조작 기능
   | **조작키** | **구현내용** |
   |------|---------------|
-  | 스마트폰 카메라 | 게임화면 출력 |
-  | 화면 터치 | 거점 클릭, 스킬 사용 |
+  | W, A, S, D | 탑뷰시점에서 카메라 이동 |
+  || 1인칭에서 캐릭터 이동 |
+  | 마우스 왼쪽 클릭 | 미니언 클릭 |
+  || 1인칭에서 캐릭터 기본 공격 |
+  |Q, E| 1인칭 시점에서 스킬 사용 |
   
 - 담당한 부분
-  - 관련 ppt 자료 ▶ <u>[__상세정보__](https://docs.google.com/presentation/d/1lmo4ADlvTBv8ttFLliyMBjV6eHRBcoml/edit?usp=sharing&ouid=107613512527669999751&rtpof=true&sd=true) ◀ **확인 강추!**:wink:
+  - 관련 ppt 자료 ▶ <u>[__상세정보__](https://drive.google.com/file/d/1qMiXpnTqVY6yEKFpnhBcc_K5Dg6Z7HdR/view?usp=sharing) ◀ **확인 강추!**:wink:
   - 해당 프로젝트는 팀으로 진행하였습니다
   - 
     > PSH
     >> 게임기획<br>
-    >> UI아이디어 구상<br>
-    >> 스킬 구상 및 구현<br>
-    >> 맵 디자인<br>
-    >> 이펙트 선정
+    >> 프로토타입 캐릭터 개발 및 구체화<br>
+    >> Photon R&D<br>
+    >> 게임 맵 디자인<br>
+    >> 캐릭터 선택 화면 디자인<br>
+    >> 사운드 선정<br>
   
     > LSM
-    >> 게임 기본틀 제작<br>
-    >> 마커 UI 제작<br>
-    >> 적 인공지능 제작<br>
+    >> 프로토타입 개발<br>
+    >> 디테일 보충<br>
+    >> 예외처리<br>
+    >> UI디자인 기획 및 구현<br>
+    >> 전사 스킬 및 이펙트 상향수정<br>
+
+    > HSH
+    >> 미니언 기획 및 구현<br>
+    >> Unity Machine Learning R&D<br>
+    >> 인공지능 적용 모델 기획 및 구현<br>
+    >> 디버깅, QA업무<br>
   
   - 프로젝트를 진행하는 것에 있어, 구글 스프레드시트를 통해 작업 진행, 일정을 관리하였습니다.
-  :date:<u>[__구글 스프레드시트__](https://docs.google.com/spreadsheets/d/1XJCN02PJmefbUTiuzGeqIgXhyr6QQCsxy7IfTOkqtOg/edit?usp=sharing)
+  :date:<u>[__구글 스프레드시트__](https://docs.google.com/spreadsheets/d/1Qzv0TRTo73e4JdQ92Amah9FKGUQW6xlH6JYoMIjau6k/edit#gid=0)
 
 - 프로젝트 결과
   
