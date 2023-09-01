@@ -50,6 +50,8 @@
 
 - [2022 My Blog](#2-7-2022-my-blog) [:memo:](#info, "HTML, CSS, Jquery, Javascript, Solo")
 
+- [Descent](#2-8-Descent) [:memo:](#info, "Unity Engine, Photon, Unity Machine Learning, Trio")
+
 
 ---
 
@@ -484,7 +486,7 @@
   |Q, E| 1인칭 시점에서 스킬 사용 |
   
 - 담당한 부분
-  - 관련 ppt 자료 ▶ <u>[__상세정보__](https://drive.google.com/file/d/1qMiXpnTqVY6yEKFpnhBcc_K5Dg6Z7HdR/view?usp=sharing) ◀ **확인 강추!**:wink:
+  - 관련 ppt 자료들.zip ▶ <u>[__상세정보__](https://drive.google.com/file/d/1qMiXpnTqVY6yEKFpnhBcc_K5Dg6Z7HdR/view?usp=sharing) 
   - 해당 프로젝트는 팀으로 진행하였습니다
   - 
     > PSH
@@ -512,21 +514,21 @@
   :date:<u>[__구글 스프레드시트__](https://docs.google.com/spreadsheets/d/1Qzv0TRTo73e4JdQ92Amah9FKGUQW6xlH6JYoMIjau6k/edit#gid=0)
 
 - 프로젝트 결과
-  - 시연동영상 ▶<u>[🎮](https://drive.google.com/file/d/1wIdhO1_iUqqzGrSamw0ilS7mxVgZ7tDB/view?usp=sharing)
+  - 시연동영상 ▶<u>[🎮](https://drive.google.com/file/d/1wIdhO1_iUqqzGrSamw0ilS7mxVgZ7tDB/view?usp=sharing)◀ **확인 강추!**:wink:
 
-  
+  <img src="4_1Descent/GameLobby.png" width="800" height="400">
 
-  <img src="3_2SlimeAttack/1.png" width="800" height="400">
+  <img src="4_1Descent/Map.png" width="800" height="400">
   
-  <img src="3_2SlimeAttack/2.png" width="800" height="400">
+  <img src="4_1Descent/FPS_Camera.png" width="800" height="400">
   
 - 프로젝트를 진행하면서 느낀 점
   - 어려웠던 점
     
-    **`1. Vuforia Engine을 이용한 첫 번째 증강현실 게임 구현`** ⬅️
-      웹캠을 통해, 카메라로 증강현실로 물체를 띄우고 서로 상호작용을 시켜 게임을 만들어가는 과정은 역시 생소했지만, 교수님의 수업과 수업자료들을 통해 극복해나갈 수 있었습니다.
+    **`1. 포톤을 이용한 멀티플레이 개발`** ⬅️
+      게임에 멀티플레이 기능을 넣고자 한 프로젝트는 이번이 처음이었습니다. 
       
-    **`2. 아직 미숙한 Github사용`** ⬅️
+    **`2. 유니발`** ⬅️
       이 프로젝트는 팀으로 진행되었고, 전 이 프로젝트에서 과거의 경험을 최대한 살렸습니다. 그리고 Unity package를 import해서 작업물을 공유하는 것이 아니라 Github Desktop을 통하여 작업물을 공유하였습니다. 공유하는 과정은 훨씬 편해졌지만, 동시간대에 작업하는 경우, 한 쪽의 작업물이 소실되는 경우가 2, 3번 있었습니다. 이 경우 revert changes in commit기능도 제대로 먹히지 않아서 난항을 겪었지만, 따로 백업파일을 두는 것을 습관화 하여 프로젝트를 마무리할 수 있었습니다.
 
   
