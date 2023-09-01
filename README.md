@@ -512,7 +512,10 @@
   :date:<u>[__구글 스프레드시트__](https://docs.google.com/spreadsheets/d/1Qzv0TRTo73e4JdQ92Amah9FKGUQW6xlH6JYoMIjau6k/edit#gid=0)
 
 - 프로젝트 결과
+  - 시연동영상 ▶<u>[🎮](https://drive.google.com/file/d/1wIdhO1_iUqqzGrSamw0ilS7mxVgZ7tDB/view?usp=sharing)
+
   
+
   <img src="3_2SlimeAttack/1.png" width="800" height="400">
   
   <img src="3_2SlimeAttack/2.png" width="800" height="400">
